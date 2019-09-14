@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>User Arrays</title>
+
+</head>
+<body>
+
+<script>
+
+//These notes help with assignment 7
+
+var nums = new Array();
+var go = true; 
+while(go == true) // or say (go)
+{ 
+
+// ask user for input and write into array
+var n = parseFloat(prompt("Number?", "2"));
+nums.push(n); // adding new element to the end of the array
+go = confirm("Again?");
+
+
+
+}
+document.write("<h2>You entered the following numbers "+nums+"</h2>");
+
+
+var total = 0;
+
+for(var i = 0; i < nums.length; i++)
+{
+  total += nums[i];
+
+}
+
+document.write("<h2>The total is "+total+"</h2>");
+
+</script>
+
+
+
+</body>
+</html> 
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Basic HTML Page</title>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 5 part 1-2
+//barchart with a function
+
+function barChart(num, symbol) //function taking in the number and symbol user input and making a bar chart out of it
+{
+  document.write("<table>");
+  document.write("<tr>");
+      for(var i = 1; i <= num; ++i)
+      {
+        document.write("<td>"+symbol+"</td>");
+      
+      }
+  
+  document.write("</tr>");
+  document.write("</table>");
+
+}
+
+</script>
+</head>
+<body>
+
+<table>
+
+<script>
+
+var limit = parseFloat(prompt("How many characters do you want?","4")); //asks the user how many characters they want in barchart
+  if(limit < 0)
+  {
+    document.write("<p>Please enter a positive number.</p>"); // if user enters a negative number
+  }
+  else
+  {
+  var s = prompt("What character do you want to use?","&"); // asks the user what character they want to use. 
+  barChart(limit,s); // calls the barChart(num, symbol) function
+   
+   } 
+    
+
+
+
+
+
+
+</script>
+</table>
+</body>
+</html> 
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Count Occurrences</title>
+
+</head>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 7
+//Count Occurrences
+
+function countOccurrences(numArray, num) //function that counts up our number of occurrences
+{
+  var total = 0; //accumulator variable
+  
+  for(var i = 0; i < numArray.length; i++)
+  {
+      if(numArray[i] == num)
+      {
+        total += 1; //if we find the number the person is looking for, we add 1 total
+      }
+      else
+      {
+        total = total; //don't remember how to say keep looping if no match, so I just did this. 
+      }
+      
+      
+  }
+  return total; //returns total to the index 
+
+}
+
+</script>
+
+<body>
+
+  
+<script>
+
+var nums = new Array();
+var go = true; 
+while(go == true) // or say (go)
+{ 
+
+// ask user for input and write into array
+var n = parseFloat(prompt("Number?", ""));
+nums.push(n); // adding new element to the end of the array
+go = confirm("Again?"); //keep adding numbers to array as long as user keeps pressing yes
+
+}
+
+var key = parseFloat(prompt("Please enter a number to keep track of",""));
+var index = countOccurrences(nums, key); //calling our function to count occurrences of number in key variable
+if(index == -1) //if there are no occurrences
+{
+  document.write("<p>"+key+"Does not occur at all in this Array.</p>");
+ }
+ else //Print out the number we are looking for, and how many times we found it.
+ {
+  document.write("<p>We found "+key+" in the array "+index+" time(s)!</p>");
+ }
+
+
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

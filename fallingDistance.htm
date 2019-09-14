@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Falling Distance</title>
+
+</head>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 6 
+//Falling Distance 
+
+function fallingDistance(t) //passes in our loop variable i as parameter for time in seconds, and calculates the distance an object would fall after t seconds and returns value
+{
+ var d = (1/2)* 9.8* Math.pow(t,2);
+ return d; 
+}
+
+</script>
+
+<body>
+<table border = "1" width = "50%"> <!--setting up our table-->
+  <tr>
+    <th>Time</th>
+    <th>Distance</th>
+  </tr>
+  
+  <tr>
+  
+<script>
+
+var limit = 10; //setting limit for our loop.
+
+for(var i = 1; i <= 10; i++) //started loop at 1, just makes it easier for the problem
+{
+  
+  var distance = fallingDistance(i); //calls our function, and stores the calculation from function in var distance
+  document.write("<td>"+i+"</td>"); // column for seconds
+  document.write("<td>"+distance.toFixed(2)+"</td>"); //column for distance, tidied up distance to by putting to two decimal places.
+  
+  document.write("</tr><tr>");
+  
+  
+
+
+}
+
+  
+
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

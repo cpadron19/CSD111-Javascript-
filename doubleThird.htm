@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Double Every Third Number</title>
+
+</head>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 7
+//Double Every Third Number
+
+
+
+</script>
+
+<body>
+
+  
+<script>
+
+var nums = new Array(); //our array we're putting the numbers into
+var go = true; //as long as the user keeps pressing ok
+while(go == true) // or say (go)
+{ 
+
+// ask user for input and write into array
+var n = parseFloat(prompt("Number?", ""));
+nums.push(n); // adding new element to the end of the array
+go = confirm("Again?"); //keep adding numbers to array as long as user keeps pressing yes
+
+}
+
+document.write("<p>Before: "+nums.toString()+"</p>"); //prints out our string before modification
+
+for(var i = 0; i < nums.length; i++)
+{
+  if((i+1) % 3 == 0) //if the spot in the array is divisible by 3, modify it
+  {
+    nums[i] *= 3;
+  
+  }
+
+}
+
+document.write("<p>After "+nums.toString()+"</p>"); //prints out our string after the modification
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

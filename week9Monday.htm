@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Falling Distance</title>
+
+<script>
+  function sum(n_array)
+  {
+    var total = 0; //accumulator variable
+    
+    for(var i = 0; i < n_array.length; ++i)
+    {
+    
+      total+= n_array[i];
+    
+    }
+    
+    return total;
+  
+  }
+
+
+  function linearSearch(n_array, key)
+  {
+    var found_index = -1;
+    var continue_search = true;
+    
+    for(var i = 0; (i < n_array.length) && (continue_search == true); ++i)
+    {
+      if(key == n_array[i])
+      {
+        continue_search = false;    //stop looping
+        found_index = i;      //save where we found match
+      
+      }
+    
+    }
+    
+    return found_index; // found_index could be a -1. If we didn't find anything.
+  
+  
+  }
+
+</script>
+
+
+
+</head>
+<body>
+
+<script>
+
+  var nums = [1,1,45,56,3,8,77,11]; // sets up our array
+  
+  document.write("<p>"+nums.toString()+"</p>"); //displays array
+  
+  var s = sum(nums); 
+  document.write("<p>The sum of all elements of the array is "+s+"</p>");
+  
+  var key = parseFloat(prompt("Please enter a  number to search for","10"));
+  var index = linearSearch(nums, key);
+  if(index == -1)
+  {
+  document.write("<p>No Match! Bitch</p>");
+  }
+  else
+  {
+    document.write("<p>We found value "+key+"in the element with index "+index+"</p>");
+  }
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html> 
+
+
+
+

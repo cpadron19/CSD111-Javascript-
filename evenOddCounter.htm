@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Odd/ Even Counter</title>
+
+</head>
+<script>
+
+function isEven(num) //checking to see if number is even
+{
+  var status;
+  if(num % 2 == 0)
+  {status = true;}
+  else
+  {status = false;}
+  return status;
+
+
+}
+
+</script>
+
+<body>
+
+<table width = "50%" border = "1"> <!--setting up our table-->
+
+<tr>
+
+<script>
+
+var evens = 0; //even counter
+
+var odds = 0; //odds counter
+
+for(var i = 0; i < 100; i++) //looping through all 100 of our number generations
+{
+  var random = Math.floor(Math.random()*100+1); // 1-100
+  
+  
+  var number = isEven(random);
+  
+  if(number == true) //adding in the even and odd counters
+  {
+    evens++;
+  }
+  else
+  odds++;
+  
+  document.write("<td>"+random+"</td>"); //printing out table one cell at a time
+  
+  if(((i+1) % 10 ==0) && i<99) // placing a row break into the table
+    document.write("</tr><tr>");  
+  
+  
+
+}
+
+document.write("<p>We had "+evens+" even numbers in the number generation.</p>"); //printing out our results
+document.write("<p>We had "+odds+" odd numbers in the number generation.</p>"); //printing out our results
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

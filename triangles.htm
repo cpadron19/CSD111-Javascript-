@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Area of Two Triangles</title>
+
+
+</head>
+<body>
+<script>
+
+//Cameron Padron 
+// ITAD 111 MW 4PM Class
+//Triangle Area size returner
+
+//Ask user for triangle unit measurements
+
+var base1 = prompt("Please enter the Base of the First triangle", 5);
+var height1 = prompt("Please enter the Height of the First triangle ", 10);
+
+//second triangle
+var base2 = prompt("Please enter the Base of the Second Triangle ", 10);
+var height2 = prompt("Please enter the Height of the Second Triangle", 20);
+
+//area calculations
+var area1 = (height1*base1)/2;
+var area2 = (height2*base2)/2;
+
+
+//compare the areas and output which is larger, or if they are the same.
+  if(area1 > area2)
+  {
+    document.write("<p>Triangle 1 has a larger area than Triangle 2</p>");
+  } 
+    else
+    {
+      if(area2 > area1)
+      {
+      document.write("<p>Triangle 2 has a larger area than Triangle 1</p>");
+      }
+      else
+    {
+      if(area1 == area2)
+      {
+        document.write("<p>The areas are the same.</p>");
+      }
+    }  
+    }
+    
+//done :)
+
+
+
+</script>
+
+</body>
+</html> 
+
+
+
+

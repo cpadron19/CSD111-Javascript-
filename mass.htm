@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Simple Decision</title>
+
+</head>
+<body>
+<script>
+//Cameron Padron
+//Assignment 4, Mass calculator
+//ITAD 111 MW 4pm class
+//This took 5 minutes to create lol
+//made me think of the goldilocks and the three bears :D
+
+//ask the user to enter the mass of the object
+  var mass = prompt("Please enter the mass of your object ", 5);
+  
+  // Calculate the weight of the object in Newtons
+  var weight = mass * 9.8;
+  
+  
+  //Determine if the weight of the object is within 10-100 newtons, if not write too big or too small.
+  if(weight > 100)
+  {
+    document.write("<p>The object is TOOOOO BIGGGGGG!!!!!!</p>");
+  }
+  else
+  {
+    if(weight < 10)
+    {
+      document.write("<p>The object is tooooo smalllllll.....</p>");
+    }
+    else
+    {
+      document.write("<p>The object weighs "+weight+" Newtons!</p>");
+    }
+  }
+  
+  
+</script>
+
+</body>
+</html> 
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Arrays</title>
+
+</head>
+<body>
+
+<script>
+var nums = [83, 100, 65, 93, 87];
+
+document.write("<p>"+nums.toString()+"</p>"); // printing to array
+
+nums[3] = 107;
+
+document.write("<p>After change "+nums.toString()+"</p>"); // printing to array
+
+document.write("<p>Looking into element with index 10 "+nums.toString()+"</p>"); // printing to array
+
+
+var total = 0; // accumulator variable
+
+for(var i = 0; i < 5; ++i)
+{
+  document.write("<p>Element number "+nums[i]+"</p>");
+  total += nums[i];
+  document.write("<p>Current sum of elements: "+nums[10]+"</p>");
+  
+  
+}
+
+document.write("<h2>The Total Is "+total+"</h2>");
+
+</script>
+
+
+
+</body>
+</html> 
+
+
+
+

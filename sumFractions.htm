@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Sum of Fractions</title>
+
+</head>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 6 
+//Sum of Fractions
+
+function fractionSum(N) //fractionSum function 
+{
+ var total = 0;
+ for(var i = N; i >= 1; i--) //started loop at 1, just makes it easier for the problem
+{
+  
+  total += 1/i; // this is the part doing the 1/n-1, 1/n-2 and so forth and adding up the totals each loop
+  
+
+
+}
+return total;
+}
+
+</script>
+
+<body>
+
+  
+<script>
+
+var fraction = parseFloat(prompt("how many times do you want to divide this fraction?","5"));; //setting limit for our loop.
+
+
+
+var sum = fractionSum(fraction); //sending our fraction to the function
+
+document.write("<p>The Sum is "+sum+"</p>"); //print the sum of the calculations
+
+  
+
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

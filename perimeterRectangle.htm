@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Perimeter of a Rectangle</title>
+
+</head>
+<script>
+
+function perimeter(l, w) //function that takes length and width as parameters and calculates area
+{
+ var area = 2*(l + w);
+ 
+ return area;
+
+
+}
+
+</script>
+
+<body>
+<script>
+
+var length = parseFloat(prompt("Please enter length of triangle 1", "5")); //asking user for length of triangle 1
+
+var width = parseFloat(prompt("Please enter width of triangle 1", "5")); //asking user for length of triangle 2
+
+var tri1 = perimeter(length,width); //sending length and width of triangle 1 to function and storing value here
+
+length = parseFloat(prompt("Please enter length of triangle 2", "5")); //Same stuff for Triangle 2
+width = parseFloat(prompt("Please enter width of triangle 2", "5"));
+
+var tri2 = perimeter(length,width);
+
+if(tri1 > tri2) //This group of if/else's checks to see which triangle is bigger, or the same, and then displays the 
+                // triangle with a larger area. 
+{
+  document.write("<p> Triangle 1 is larger with an area of "+tri1+".</p>");
+
+}
+else
+{
+  if(tri1 == tri2)
+  {
+    document.write("<p> The triangles are the same size with an area of "+tri1+".</p>");
+  }
+  else
+    document.write("<p>Triangle 2 is larger with an area of "+tri2+".</p>");
+
+}
+  
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+

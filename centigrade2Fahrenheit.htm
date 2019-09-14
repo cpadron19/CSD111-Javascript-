@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Ocean Levels</title>
+
+</head>
+<body>
+
+<table border= "1" width="50%"> <!-- Start of our table -->
+  <tr>
+  <th>Centigrade to Fahrenheit</th> <!--Thought this looked better than just putting a header outside of table-->
+  <th>By Cameron Padron</th>
+  </tr>
+  
+  <tr>
+      <th>Centigrade Temperature</th> <!-- Column headers-->
+      <th>Fahrenheit Equivalent</th>
+  </tr>
+
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 5 Part 2-1
+//Centigrade to Fahrenheit dynamic table
+  var limit = 20 // setting the limit for our loop
+  
+  
+  for(var num = 0; num <=limit; ++num) //loop calculates the degree fahrenheit output for each centigrade  input
+  {
+    var temperature = 9/5*num + 32;
+    
+    document.write("<tr>");
+    document.write("<td>"+num+"</td>");
+    document.write("<td>"+temperature.toFixed(2)+"</td>");
+    document.write("</tr>");
+  
+  }
+
+
+ 
+
+
+
+
+
+</script>
+</table>
+</body>
+</html> 
+
+
+
+

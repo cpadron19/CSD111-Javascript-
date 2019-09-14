@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Random Numbers</title>
+
+</head>
+<body>
+
+<table width = "50%" border = "1">
+
+<tr>
+
+<script>
+
+for(var i = 0; i < 100; ++i)
+{
+  var r = Math.floor(Math.random()*6+1); //[1,6] 
+  
+  document.write("<td>"+r+"</td>");
+  if(((i+1) % 5 ==0) && i<99)
+    document.write("</tr><tr>");  
+
+
+}
+
+
+//For running total, use this formula pay = 2^(day-1)
+
+
+</script>
+</table>
+</body>
+</html> 
+
+
+
+

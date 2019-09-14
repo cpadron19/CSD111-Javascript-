@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Simple Decision Statement</title>
+<!-- Alexandra Vaschillo -->
+</head>
+<body>
+<script>
+ // Cameron Padron
+ //ITAD 111 MW 4pm 
+ //Roman numeral switch statements
+ //start time 3:45pm 10/30/16
+ //finish time 3:59pm 10/30/16
+ 
+
+ 
+//prompt the user to enter a roman numeral 1-10
+ 
+  var number_str = prompt("Please enter arabic number 1-10", "5");
+  //turn string number to an integer
+  var number = parseInt(number_str);
+  
+  //make sure the number is within the parameters of our switch statement
+  if(number < 0 || number > 10)
+  {
+    document.write("error, please enter a number 1-10");
+    
+  }
+  else  // run the switch statement for the numbers 1-10
+  {
+  
+  
+  //our message setting up the conversion
+  document.write(+number+" is ");
+  
+  //switch statements changing our values from arabic to roman numerals
+  switch(number)
+  {
+    
+    case 1:
+      document.write("I");
+      break;
+    case 2:
+      document.write("II");
+      break;
+    case 3:
+      document.write("III");
+      break;
+    case 4:
+      document.write("IV");
+      break;
+    case 5:
+      document.write("V");
+      break;
+    case 6:
+      document.write("VI");
+      break;
+    case 7:
+      document.write("VII");
+      break;
+    case 8:
+      document.write("VIII");
+      break;
+    case 9:
+      document.write("IX");
+      break;
+    case 10:
+      document.write("X");
+      break;
+    default:
+      break;
+   
+  }
+  }
+ 
+</script>
+
+</body>
+</html> 
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Pennies for Pay</title>
+
+</head>
+
+<body>
+
+<table border= "1" width="50%"> <!--table begins-->
+  
+  <tr>
+      <th>Day #</th>
+      <th>Pay</th>
+  </tr>
+
+<script>
+//Cameron Padron
+//Assignment 5 Part 2-2
+//Pennies for Pay
+  
+  var total = 0; //accumulator variable
+  var limit = parseFloat(prompt("How many days would You like to Calculate pay for?","15")); // asks the user how many days they want to calculate pay for
+  
+  
+  for(var num = 1; num <=limit; ++num)  //loop generating days and pay amounts
+  {
+    var pay = .01*Math.pow(2,num-1);
+    total = total + pay;
+    
+    document.write("<tr>"); // creates row
+    document.write("<td>"+num+"</td>"); // day column
+    document.write("<td>"+pay.toFixed(2)+"</td>"); // pay column
+    document.write("</tr>"); //end row
+  
+  }
+
+ 
+
+
+
+
+
+</script>
+
+</table>
+
+<script>
+    
+    document.write("<p><h2>The total is $"+total.toFixed(2)+"</h2></p>"); //outputs the total of all days put together
+
+</script>
+
+</body>
+
+</html> 
+
+
+
+

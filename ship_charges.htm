@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Simple Decision</title>
+
+</head>
+<body>
+<script>
+//Cameron Padron
+//Assignment 4, Mass calculator
+//ITAD 111 MW 4pm class
+//This took 5 minutes to create lol
+//made me think of the goldilocks and the three bears :D
+
+//ask the user to enter the mass of the object
+  var weight = prompt("Please enter the weight of your package ", 1);
+  
+  //determine which shipping charge to apply to package, and then return the total charge to the user
+  if(weight <= 2 && weight > 0)
+  {
+    var charge = weight * 1.10;
+    document.write("<p>Your total shipping charges are $"+charge.toFixed(2)+"</p>");
+  }
+  else
+  {
+    if(weight > 2 && weight <= 6)
+    {
+      var charge = weight * 2.20;
+      document.write("<p>Your total shipping charges are $"+charge.toFixed(2)+"</p>");
+      
+    }
+    else
+    {
+      if(weight > 6 && weight <= 10)
+      {
+        var charge = weight * 3.70;
+        document.write("<p>Your total shipping charges are $"+charge.toFixed(2)+"</p>");
+      }
+      else
+      {
+        if(weight > 10)
+        {
+          var charge = weight * 3.80;
+          document.write("<p>Your total shipping charges are $"+charge.toFixed(2)+"</p>");
+        }
+        
+      }
+    }
+  }
+ 
+  
+</script>
+
+</body>
+</html> 
+
+
+
+

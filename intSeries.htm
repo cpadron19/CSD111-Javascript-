@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Series of Integers</title>
+
+</head>
+<script>
+
+//Cameron Padron
+//ITAD 111
+//Assignment 7
+//Series of Integers
+
+</script>
+
+<body>
+
+  
+<script>
+
+var nums = new Array(); // initializing and assigning our array to a variable.
+
+var go = true;
+
+while(go == true) // or i could have put or say while(go)
+{
+  
+  //ask user for input and write into array
+  var n = parseFloat(prompt("Please Enter any number you want.",""));
+  
+  nums.push(n); // adding new element to the end of the array
+  go = confirm("Again?");
+  
+  
+  
+
+
+}
+
+document.write("<h2>You entered the following numbers "+nums+"</h2>");
+
+var totalNegative = 0; // total for all even numbers the person adds up. 
+var totalPositive = 0; // total for all odd numbers
+var negatives = new Array();  
+var  positives = new Array();
+
+
+for(var i = 0; i < nums.length; i++)
+{
+  if(nums[i] < 0)
+  {
+    negatives.push(nums[i]);//adding even element to evens Array
+    totalNegative += nums[i]; 
+  
+  }
+  else
+  {
+    positives.push(nums[i]); // adding odd element to odds Array
+    totalPositive += nums[i];
+  
+  
+  }
+  
+  
+ 
+
+
+}
+
+document.write("<h2>You entered the following negative numbers "+negatives+"</h2>"); //shows array of negatives
+document.write("<h2>You entered the following positive numbers "+positives+"</h2>"); // shows array of positives
+document.write("<h2>The sum of all negative integers is "+totalNegative+"</h2>"); //total of negative numbers
+document.write("<h2>The sum of all positive integers is "+totalPositive+"</h2>"); //total of positive numbers
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</table>
+</body>
+</html> 
+
+
+
+
