@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <title>Fahrenheit to Celsius Converter</title>
+	   <meta charset="utf-8" >
+           <!-- Cameron Padron -->
+           <!--ITAD 111--Assignment 3--Temperature Converter-->
+           <!--I would like to note I only called this file stupid because I made a whole seperate file before i read I had to use this one :/-->
+	<script>
+  //function performing the temperature conversion
+  function FC_form()
+  {
+   //creating a string to store the value in the Fahrenheit form
+   var string = document.getElementById('fahr').value;
+        //not sure if this was necessary, but did it anyways(making string a number) 
+        string= parseFloat(string);
+   //fahrenheit to celsius conversion pulling in string as the variable.
+   var tempCelsius = (string - 32)*(5/9);
+   //outputting the temperature in celsius to the celsius form
+   document.getElementById('cel').value = tempCelsius.toFixed(2);
+  }
+  
+  
+</script>
+
+	</head>
+	<body>
+		<h3>Fahrenheit to Celsius Converter </h3>
+		<form id="FCform">
+			Enter temperature in Fahrenheit:  <input type="text" id="fahr" name="fahr" size="10" >
+			<br><br>
+
+			<input type = "button" id="button1" value="Calculate Celsius" onclick = "FC_form()" >
+			<input type = "reset" value="Clear" >
+			
+			<br><br>		
+			Temperature in Celcius is: <input readonly="readonly" id="cel" name="cel" type="text" size="10" >
+				
+		</form>
+	</body>
+</html>
