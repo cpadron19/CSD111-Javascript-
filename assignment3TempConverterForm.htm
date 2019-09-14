@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="UTF-8"/>
+<title></title>
+<!--Cameron Padron-->
+<!--Assignment 3 ITAD 111-->
+<script>
+  //function performing the temperature conversion
+  function FC_form()
+  {
+   //creating a string to store the value in the Fahrenheit form
+   var string = document.getElementById('fahr').value;
+        //not sure if this was necessary, but did it anyways(making string a number) 
+        string= parseFloat(string);
+   //fahrenheit to celsius conversion pulling in string as the variable.
+   var tempCelsius = (string - 32)*(5/9);
+   //outputting the temperature in celsius to the celsius form
+   document.getElementById('cel').value = tempCelsius.toFixed(2);
+  }
+  
+  
+</script>
+
+</head>
+
+<body>
+
+
+<h1 onclick = "alert('You clicked on header dog')">Fahrenheit to Celsius Converter</h1>
+
+<form>
+  Enter Fahrenheit Here:<input type = "text" id="fahr" name="fahr"  />
+  <input type="button" value="Click ME" onclick = "FC_form()" />
+  <input type="reset" value="Reset"/>
+  <br>
+  <br>
+  
+  Temperature in Celsius: <input type="text" id="cel" name="cel" />
+
+</form>
+
+
+
+
+
+</body>
+</html>
