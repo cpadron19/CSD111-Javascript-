@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="UTF-8"/>
+<title></title>
+<!--Cameron Padron-->
+<!--Assignment 3 ITAD 111-->
+</head>
+<body>
+<script>
+
+//calculation function to convert F to Reamur
+function FR_converter(tf)
+{
+  //fahrenheit to reaumur function
+  var tempRe = (tf - 32)*(4/9);
+  
+  //write out the document to web page
+  document.write("<p>The temperature in Reamur is "+tempRe.toFixed(2)+"</p>");
+}
+
+</script>
+
+<script>
+  
+  //prompting the user to enter a temperature in degrees fahrenheit
+  var fahrenheit = prompt("Please enter the temperature in Fahrenheit ", "100");
+  
+  
+  //calling the FR_Converter function with fahrenheit variable as a parameter. 
+  
+  FR_converter(fahrenheit);
+</script>
+
+
+</body>
+</html>
